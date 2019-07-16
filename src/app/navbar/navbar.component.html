@@ -1,0 +1,9 @@
+<div class="topnav">
+  <a (click)="goHome()"><b>GitHub </b>Search</a>
+  <div class="search-container">
+    <form class="example" #search = "ngForm" (ngSubmit) = "onClickSubmit(search.value)">
+            <input type="text" name="name" placeholder="Ingresa nombre" ngModel>
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+  </div>
+</div>

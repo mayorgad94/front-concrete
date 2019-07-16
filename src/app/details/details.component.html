@@ -1,0 +1,31 @@
+<app-navbar></app-navbar>
+<div class="centered" *ngIf="load">
+    <img  src="https://media0.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif">
+</div>
+<div class="row" *ngIf="!load">
+  <div class="column" >
+    <div class="card">
+        <a href="{{user.html_url}}"><img src="{{user.avatar_url}}" style="width:100%"></a>
+        <h1 *ngIf="user.name">{{user.name}}</h1>
+        <h1 *ngIf="!user.name">Sin nombre</h1>
+        <a href="{{user.html_url}}"><p *ngIf="user.login" class="title">{{user.login}}</p></a>
+        <p *ngIf="!user.login" class="title">Sin login</p>
+        <p *ngIf="user.email">{{user.email}}</p>
+        <p *ngIf="!user.email">Sin email</p>
+        <p *ngIf="user.bio">{{user.bio}}</p>
+        <p *ngIf="!user.bio">Sin biografia</p>  
+        <p><i class="fas fa-user-friends"></i> {{user.followers}}</p>     
+    </div>
+  </div>
+  <div class="column2">
+    <div>
+        <div *ngFor="let repo of repositories | orderBy: order : true : false" style="height:auto;width:100%;border-left:5px solid #ac53f3;margin-bottom:20px;">
+            <div style="margin-left:10px;">
+                <a href="{{repo.html_url}}"><div style="font-size: 30px;color:#ac53f3;">{{repo.name}}</div></a>
+                <div style="font-size: 20px;">{{repo.description}}</div>
+                <div style="font-size: 15px;"><i class="far fa-star">{{repo.stargazers_count}}</i></div>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>

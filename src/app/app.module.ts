@@ -10,6 +10,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule }   from '@angular/forms';
 import { GitHubService } from './API/gitHubApi/git-hub.service';
+import { OrderModule } from 'ngx-order-pipe';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { GitHubService } from './API/gitHubApi/git-hub.service';
     BrowserModule,
     HttpClientModule,
     FormsModule,
+    OrderModule,
     AppRoutingModule
   ],
   providers: [GitHubService],

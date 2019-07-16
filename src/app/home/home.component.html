@@ -1,0 +1,11 @@
+<div class="centered">
+    <div class="letter">
+        <strong>Github </strong><em>Search</em>
+    </div>
+    <div style="max-width:700px">
+        <form class="example" #search = "ngForm" (ngSubmit) = "onClickSubmit(search.value)">
+            <input type="text" name="name" placeholder="Ingresa nombre" ngModel>
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+</div>

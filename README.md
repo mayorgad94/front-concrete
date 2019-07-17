@@ -1,27 +1,21 @@
-# FrontContrete
+# Desafio Front End Concrete
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.1.
+De acuerdo a lo solicitado, se procedio a realizar una aplicación web el cual permite a los usuarios finales poder buscar y visualizar los repositorios de un usuario Github específico.
 
-## Development server
+## Requisitos para visualizar proyecto localmente 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Para visualizar el proyecto localmente se debe ingresar a https://angular.io/guide/setup-local e instalar angular con sus dependecias para poder visualizar el proyecto localmente.
 
-## Code scaffolding
+## Descarga del proyecto y compilación local
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Para poder descargar el proyecto, favor clonar este repositorio y mediante la consola de comando y acceder a la carpeta del proyecto. Una vez dentro de la carpeta raiz del proyecto (FRONT-CONCRETE) ejecutar comando ng serve y una vez compilado acceder a http://localhost:4200/ (navegador web) para ver el proyecto localmente. 
 
-## Build
+## Pruebas unitarias
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Se realizaron pruebas unitarias a algunos de los componentes creados. Esto fue nuevo para mi, por lo que se tuvo que investigar para poder hacer estas pruebas. Pero la idea es que seguir aprendiendo con ustedes nuevas cosas, como esta. Para ver las pruebas se debe ejecutar el comando 'ng test' y el navegador se abrira automaticamente.
 
-## Running unit tests
+Las pruebas se hicieron con Karma y Jasmine.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Proyecto ambiente productivo
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Si se desea validar esta aplicacion web en ambiene productivo, favor acceder a https://front-concrete.herokuapp.com/ para poder verlo. Esto fue montado en Heroku Cloud.
